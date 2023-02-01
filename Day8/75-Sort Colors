@@ -1,0 +1,14 @@
+class Solution {
+    public void sortColors(int[] nums) {
+        List<Integer> lis = new ArrayList<>();
+        for(int i=0; i<nums.length;i++){
+            lis.add(nums[i]);
+        }
+         Collections.sort(lis);
+         for(int i=0;i<lis.size();i++){
+             nums[i]=lis.get(i);
+         }
+         return;
+        
+    }
+}
